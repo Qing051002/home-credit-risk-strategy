@@ -1,0 +1,16 @@
+# Kaggle data and all derived files (the competition rules do not allow redistribution)
+data/*
+!data/.gitkeep
+data_synthetic/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.env
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

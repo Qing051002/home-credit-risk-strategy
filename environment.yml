@@ -1,0 +1,21 @@
+name: homecredit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - polars>=1.0
+  - pyarrow
+  - pandas
+  - numpy
+  - scikit-learn
+  - lightgbm            # conda-forge build ships libomp (avoids the macOS "libomp.dylib not found" error)
+  - xgboost>=2.1        # >= 2.1 is required with NumPy 2
+  - matplotlib
+  - psutil
+  - jupyterlab
+  - ipykernel
+  - nbconvert           # also provides nbclient, used by 00_run_all.ipynb
+  - pip
+  - pip:
+      - optbinning
+      - kaggle
